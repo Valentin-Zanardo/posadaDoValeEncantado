@@ -1,0 +1,561 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  }
+  /* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
+.logos{
+  width: 6em;
+  height: 6em;
+  } 
+  .containerBarra{
+  width: 100%;
+  height: 38em;
+  background-image: url(../img/imagenplaya.jpg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  }
+  .titulo{
+  margin-top: 180px;
+  }
+  .containerBarra h1{
+    font-family: 'Cinzel', serif;
+    color: #96763e;
+    font-size: 40px;
+    text-shadow: #000 1px 1px;
+  }
+  article{
+  font-size: xx-large;
+  }
+  /* STYLES BARRA DE NAVEGACIÓN */
+  .barraNavegacion{ 
+  background-color: rgba(145, 102, 32, 0.3);
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  }
+  .barraNavegacion ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  font-family:  'Nunito', sans-serif; 
+  position: relative;
+  }
+  .barraNavegacion ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  }
+  .barraNavegacion ul li a:hover{
+  color: #fff;
+  }
+  .barraNavegacion ul li a::before{
+  content: "";
+  height: 1px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0%;
+  bottom: -1px;
+  transition: 0.1s ease-out;
+  }
+  .barraNavegacion ul li a:hover::before{
+  width: 100%;
+  }
+  #check, .bar-btn{
+    display: none;
+  }
+  /* STYLE DE PÁGINA BASE */
+  .container-main{
+  background-color:  rgba(145, 102, 32, 0.3);
+  width: 100%;
+  height: 100%;
+  font-family:  'Nunito', sans-serif; 
+  border: 2px solid #000;
+  padding-top: 30px;
+  }
+  .container-main h2{
+  text-align: center;
+  font-size: 1.3em;
+  margin: 40px 0;
+  }
+  .container-main section{
+    padding: 20px 5px;
+  }
+  .container-main p{
+    margin: 0 30px;
+  }
+  .container-footer {
+  object-position: bottom;
+  background-color:  rgba(145, 102, 32, 0.2);
+  width: 100%;
+  padding: 10px;
+  }
+  .container-footer a{
+    text-decoration: none;
+  }
+  .container-footer i{
+    width: 3em;
+  }
+  .redirecciones{
+  text-align: center;
+  }
+  /* GRID LAYOUT IMAGENES */
+  .valoracionesItem img{
+    width: 17em;
+    height: auto;
+    padding-top: 1.5em;
+  }
+  .valoraciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  .imagesValoracion:hover{
+    transform: scale(1.03, 1.03);
+  }
+  /* STYLES HABITACIONES */
+  .flexContainer{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 12em 7em;
+  font-size: xx-large;
+  }
+  .flexTable-1{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  display: inline-block;
+  }
+  .flexTable-2{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  display: inline-block;
+  }
+  .flexItem{
+    height: 2em;
+  }
+  .container__photos{
+  margin: 2em;
+  }
+  .imagenes-habitaciones{
+  width: 30em;
+  height: 30em;
+  }
+  /* STYLES CONTACTO */
+ .formularioContacto{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+ .formularioContacto label{
+  font-weight: bolder;
+  font-size: 1.4em;
+  padding: 0.7em 0;
+  }
+  .formularioContacto p{
+  font-weight: bolder;
+  font-size: 2em;
+  padding-top: .6em;
+  }
+  .campoEscritura{
+  width: 80%;
+  height: 3em;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  outline: 0;
+  }
+  .contactoPersonal{
+  width: 27%;
+  text-align: center;
+  margin: auto;
+  }
+  .contactoPersonal ul li{
+  list-style-type: none;
+  }
+  .contactoPersonal ul li a{
+  text-decoration: underline;
+  color: #000;
+  font-size: 1.5em;
+  }
+  .formularioContacto form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .caller{
+  padding-bottom: 50px;
+  } 
+  .containerContacto{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3em;
+  }
+  .contactoPersonal p{
+    font-weight: bolder;
+    font-size: 2em;
+    padding-bottom: 1.2em;
+  }
+  .sendForm{
+    padding: .7em 0;
+  }
+/* STYLES UBICACIÓN  */
+.ubicacionPosada{
+  margin: auto;
+  width: 80%;
+}
+.ubicacionPosada iframe{
+  width: 100%;
+}
+/* STYLES ATRACCION */
+.atraccionItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(85, 82, 82);
+  border: 1px solid #000;
+  margin-left: 5em;
+}
+.atraccionItem img{
+  width: 10em;
+}
+.atraccionesLayout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px  ;
+}
+.atraccionItem:nth-child(1){
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+.atraccionItem:nth-child(2){
+  grid-column: 1/2;
+  grid-row: 4/7 ;
+}
+.atraccionItem:nth-child(3){
+  grid-column: 1/2;
+  grid-row: 7/10;
+}
+.atraccionItem:nth-child(4){
+  grid-column: 2/3;
+  grid-row: 2/5;
+}
+.atraccionItem:nth-child(5){
+  grid-column: 2/3;
+  grid-row: 6/9;
+}
+/* SMALL LAPTOPS DESIGN */
+@media (min-width: 769px) and (max-width: 1024px){
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
+  .valoraciones{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoracionesItems{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoraciones img{
+    width: 80%;
+  }
+  .valoraciones p{
+    font-size: 1em;
+  }
+  /* RESPONSIVE HABITACIONES */
+  .flexContainer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 12em 7em;
+  }
+  .flexItem{
+    height: 2em;
+  }
+  .flexTable-1{ 
+    display: flex;
+    justify-content: center;
+  }
+  .flexTable-2{ 
+    display: flex;
+    justify-content: center;
+  }
+  .imagenes-habitaciones{
+    width: 98%;
+  } 
+  /* RESPONSIVE MENU HAMBURGUESA */
+  .bar-btn{
+    display: block;
+  }
+  .barraNavegacion ul{
+    display: block;
+    position:fixed;
+    top: 70px;
+    left: -100%;
+    background:rgba(214, 194, 170, 0.99);
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .barraNavegacion ul li{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+  .barraNavegacion ul li:last-child{
+    background: none;
+    padding: 1rem;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    transition: all .5s;
+  }
+  #check{
+    right: 0;
+    cursor: pointer;
+  }
+  /* STYLES CONTACTO */
+  .containerContacto{
+    flex-direction: column;
+  }
+  .formularioContacto{
+    width: 90%;
+  }
+  .campoEscritura{
+    width: 70%;
+  }
+  .contactoPersonal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 1em;
+  }
+  .contactoPersonal p{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul li a{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul{
+    text-align: center;
+  }
+  .caller{
+    padding-bottom: 27px;
+    } 
+} 
+/* TABLETS DESIGN */
+@media (min-width: 481px) and (max-width: 768px){
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
+  .valoraciones{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoracionesItems{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoraciones img{
+    width: 80%;
+  }
+  .valoraciones p{
+    font-size: 1em;
+  }
+  /* RESPONSIVE HABITACIONES */
+  .flexContainer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 12em 7em;
+    font-size: 1.3em;
+  }
+  .flexItem{
+    height: 4em;
+  }
+  .flexTable-1{ 
+    display: flex;
+    justify-content: center;
+  }
+  .flexTable-2{ 
+    display: flex;
+    justify-content: center;
+  }
+  .imagenes-habitaciones{
+    width: 98%;
+  }
+  .caller{
+    padding-bottom: 28px;
+    } 
+  /* RESPONSIVE MENU HAMBURGUESA */
+  .bar-btn{
+    display: block;
+  }
+  .barraNavegacion ul{
+    display: block;
+    position:fixed;
+    top: 70px;
+    left: -100%;
+    background:rgba(214, 194, 170, 0.99);
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .barraNavegacion ul li{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+  .barraNavegacion ul li:last-child{
+    background: none;
+    padding: 1rem;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    transition: all .5s;
+  }
+  #check{
+    right: 0;
+    cursor: pointer;
+  }
+  /* STYLES CONTACTO */
+  .containerContacto{
+    flex-direction: column;
+  }
+  .formularioContacto{
+    width: 90%;
+  }
+  .campoEscritura{
+    width: 90%;
+  }
+  .contactoPersonal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 1em;
+  }
+  .contactoPersonal p{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul li a{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul{
+    text-align: center;
+  }
+  .caller{
+    padding-bottom: 25px;
+    } 
+}
+/* MOBILE DESIGN */
+@media (min-width: 320px) and (max-width: 480px){
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
+  .valoraciones{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoracionesItems{
+    display: flex;
+    flex-direction: column;
+  }
+  .valoraciones img{
+    width: 80%;
+  }
+  .valoraciones p{
+    font-size: 1em;
+  }
+  /* RESPONSIVE HABITACIONES */
+  .flexContainer{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 12em 7em;
+    font-size: 1em;
+  }
+  .flexItem{
+    height: 4em;
+  }
+  .flexTable-1{ 
+    display: flex;
+    justify-content: center;
+  }
+  .flexTable-2{ 
+    display: flex;
+    justify-content: center;
+  }
+  .imagenes-habitaciones{
+    width: 98%;
+  }
+  /* RESPONSIVE MENU HAMBURGUESA */
+  .bar-btn{
+    display: block;
+  }
+  .barraNavegacion ul{
+    display: block;
+    position:fixed;
+    top: 70px;
+    left: -100%;
+    background:rgba(167, 157, 127, 0.95);
+    width: 100%;
+    height: 100vh;
+    right: 0;
+  }
+  .barraNavegacion ul li{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+  }
+  .barraNavegacion ul li:last-child{
+    background: none;
+    padding: 1rem;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    transition: all .5s;
+  }
+  #check{
+    left: 0;
+    cursor: pointer;
+  }
+  /* STYLES CONTACTO */
+  .containerContacto{
+    flex-direction: column;
+  }
+  .formularioContacto{
+    width: 90%;
+  }
+  .campoEscritura{
+    width: 90%;
+  }
+  .contactoPersonal{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 1em;
+  }
+  .contactoPersonal p{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul li a{
+    font-size: 1.3em;
+  }
+  .contactoPersonal ul{
+    text-align: center;
+  }
+  .caller{
+    padding-bottom: 20px;
+    } 
+  }
