@@ -1,33 +1,17 @@
-/* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
-/* STYLES BARRA DE NAVEGACIÓN */
-/* STYLE DE PÁGINA BASE */
-/* GRID LAYOUT IMAGENES */
-/* STYLES HABITACIONES */
-/* STYLES CONTACTO */
-/* STYLES UBICACIÓN  */
-/* STYLES ATRACCION */
-/* SMALL LAPTOPS DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
-/* ATRACCIONES */
-/* TABLETS DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
-/* MOBILE DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
 * {
 	margin: 0%;
 	padding: 0%;
 	box-sizing: border-box;
 }
+
+@import 'colors';
+
+/* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
 .logos {
 	width: 6em;
 	height: 6em;
 }
+
 .containerBarra {
 	width: 100%;
 	height: 38em;
@@ -36,27 +20,33 @@
 	background-size: cover;
 	background-attachment: fixed;
 	text-align: center;
+
 	h1 {
 		font-family: 'Cinzel', serif;
-		color: #96763e;
+		color: $colorPrincipal;
 		font-size: 40px;
 		text-shadow: #000 1px 1px;
 	}
 }
+
 .titulo {
 	margin-top: 180px;
 }
+
 article {
 	font-size: xx-large;
 }
+
+/* STYLES BARRA DE NAVEGACIÓN */
 #navbarNav {
-	background-color: rgba(119, 92, 46, 0.3);
+	background-color: $mainColor;
 	margin: auto;
 	padding: 35px 0;
 	align-items: center;
 	justify-content: center;
 	position: sticky;
 	top: 0;
+
 	ul {
 		li {
 			list-style: none;
@@ -64,17 +54,21 @@ article {
 			margin: 0 20px;
 			font-family: 'Nunito', sans-serif;
 			position: relative;
+
 			a {
 				color: rgb(0, 0, 0);
 				text-decoration: none;
 				font-size: 1.1em;
 				font-weight: bold;
+
 				&:hover {
 					color: #fff;
+
 					&::before {
 						width: 100%;
 					}
 				}
+
 				&::before {
 					content: "";
 					height: 1px;
@@ -89,124 +83,143 @@ article {
 		}
 	}
 }
+
 .navbar {
 	padding: 0;
 }
+
 .navbar-nav {
 	position: sticky;
 }
+
 .container-fluid {
 	padding: 0;
-	background-color: rgba(145, 102, 32, 0.3);
+	background-color: $mainColor;
 }
+
+/* STYLE DE PÁGINA BASE */
 .container-main {
-	background-color: rgba(145, 102, 32, 0.3);
+	background-color: $mainColor;
 	width: 100%;
 	height: 100%;
 	font-family: 'Nunito', sans-serif;
 	border: 2px solid #000;
 	padding-top: 30px;
+
 	h2 {
 		text-align: center;
 		font-size: 1.3em;
 		margin: 40px 0;
+		font-family: 'Lato', sans-serif;
 	}
+
 	section {
 		padding: 20px 5px;
 	}
+
 	p {
 		margin: 0 30px;
 	}
 }
+
 .container-footer {
 	object-position: bottom;
-	background-color: rgba(145, 102, 32, 0.2);
+	background-color: $mainColor;
 	width: 100%;
 	padding: 10px;
+
 	a {
 		text-decoration: none;
 	}
+
 	i {
 		width: 3em;
 	}
 }
+
 .redirecciones {
 	text-align: center;
 }
+
 .carousel {
 	padding-bottom: 2em;
 }
+
 .recomendacion {
 	padding-top: 1em;
 }
-.valoracionesItem {
-	img {
-		width: 17em;
-		height: auto;
-		padding-top: 1.5em;
-	}
+
+.colorPrincipal {
+	color: $colorPrincipal;
 }
-.valoraciones {
+
+#carouselExampleSlidesOnly {
+	width: 30em;
+}
+
+.carouselBorder{
+	border: 5px solid #fff;
+	border-radius: 1px;
+}
+
+.containerInicio{
+	width: 50%;
+	margin: auto;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
-	text-align: center;
+	justify-content: space-between;
 }
-.imagesValoracion {
-	&:hover {
-		transform: scale(1.03, 1.03);
+
+.subtitulosContainer-1 {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding-bottom: 3em;
+
+	h2 {
+		font-size: 1.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
 	}
 }
-.flexContainer {
-	display: grid;
-	justify-content: center;
-	align-content: center;
-	grid-template-columns: 12em 7em;
-	font-size: xx-large;
-}
-.flexTable-1 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid #000;
-	display: inline-block;
-}
-.flexTable-2 {
-	display: flex;
-	flex-direction: column;
-	border: 1px solid #000;
-	display: inline-block;
-}
-.flexItem {
-	height: 2em;
-}
-.container__photos {
-	margin: 2em;
-}
-.imagenes-habitaciones {
-	width: 30em;
-	height: 30em;
-}
+/* STYLES HABITACIONES */
+
+
+/* STYLES CONTACTO */
 .formularioContacto {
 	width: 30%;
 	margin: auto;
 	text-align: center;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
 	label {
 		font-weight: bolder;
 		font-size: 1.4em;
 		padding: 0.7em 0;
 	}
+
 	p {
 		font-weight: bolder;
 		font-size: 2em;
 		padding-top: .6em;
 	}
+
 	form {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 }
+
 .campoEscritura {
 	width: 80%;
 	height: 3em;
@@ -215,13 +228,16 @@ article {
 	text-decoration: none;
 	outline: 0;
 }
+
 .contactoPersonal {
 	width: 27%;
 	text-align: center;
 	margin: auto;
+
 	ul {
 		li {
 			list-style-type: none;
+
 			a {
 				text-decoration: underline;
 				color: #000;
@@ -229,131 +245,161 @@ article {
 			}
 		}
 	}
+
 	p {
 		font-weight: bolder;
 		font-size: 2em;
 		padding-bottom: 1.2em;
 	}
 }
+
 .caller {
 	padding-bottom: 50px;
 }
+
 .containerContacto {
 	display: flex;
 	flex-direction: row;
 	padding-bottom: 3em;
 }
+
 .sendForm {
 	padding: .7em 0;
 }
+
 .ubicacionPosada {
 	margin: auto;
 	width: 80%;
+
 	iframe {
 		width: 100%;
 	}
 }
-.atraccionRow-1 {
+
+/* ATRACCIONES STYLE */
+
+.subtitulosContainer {
+	width: 60%;
 	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
-	padding: 3em 0;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding-bottom: 3em;
+
+	h2 {
+		font-size: 1.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
+	}
 }
-.atraccionRow-2 {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	padding: 3em 0;
-}
-.card-text {
-	font-size: 1.3em;
-}
+
+/* MOBILE DESIGN */
 @media (min-width: 769px) and (max-width: 1024px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
 	.valoraciones {
 		display: flex;
 		flex-direction: column;
+
 		img {
 			width: 80%;
 		}
+
 		p {
 			font-size: 1em;
 		}
 	}
+
 	.valoracionesItems {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.container-fluid {
 		padding: .5em 0;
 	}
-	.flexContainer {
-		display: grid;
-		justify-content: center;
-		align-content: center;
-		grid-template-columns: 12em 7em;
-	}
-	.flexItem {
-		height: 2em;
-	}
-	.flexTable-1 {
-		display: flex;
-		justify-content: center;
-	}
-	.flexTable-2 {
-		display: flex;
-		justify-content: center;
-	}
-	.imagenes-habitaciones {
-		width: 98%;
-	}
+
+	/* RESPONSIVE HABITACIONES */
+
+	/* STYLES CONTACTO */
 	.containerContacto {
 		flex-direction: column;
 	}
+
 	.formularioContacto {
 		width: 90%;
 	}
+
 	.campoEscritura {
 		width: 70%;
 	}
+
 	.contactoPersonal {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
 		padding-top: 3em;
+
 		p {
 			font-size: 1.3em;
 		}
+
 		ul {
 			li {
 				a {
 					font-size: 1.3em;
 				}
 			}
+
 			text-align: center;
 		}
 	}
+
 	.caller {
 		padding-bottom: 27px;
 	}
+
+	/* STYLES ATRACCIONES */
+	.atraccionesContainer {
+		width: 90%;
+	}
 }
+
 @media (min-width: 481px) and (max-width: 768px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
 	.valoraciones {
 		display: flex;
 		flex-direction: column;
+
 		img {
 			width: 80%;
 		}
+
 		p {
 			font-size: 1em;
 		}
 	}
+
 	.valoracionesItems {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.container-fluid {
 		padding: .5em 0;
 	}
+
+	/* RESPONSIVE HABITACIONES */
 	.flexContainer {
 		display: grid;
 		justify-content: center;
@@ -361,69 +407,96 @@ article {
 		grid-template-columns: 12em 7em;
 		font-size: 1.3em;
 	}
+
 	.flexItem {
 		height: 4em;
 	}
+
 	.flexTable-1 {
 		display: flex;
 		justify-content: center;
 	}
+
 	.flexTable-2 {
 		display: flex;
 		justify-content: center;
 	}
+
 	.imagenes-habitaciones {
 		width: 98%;
 	}
+
 	.caller {
 		padding-bottom: 28px;
 		padding-bottom: 25px;
 	}
+
+	/* STYLES CONTACTO */
 	.containerContacto {
 		flex-direction: column;
 	}
+
 	.formularioContacto {
 		width: 90%;
 	}
+
 	.campoEscritura {
 		width: 90%;
 	}
+
 	.contactoPersonal {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
 		padding-top: 3em;
+
 		p {
 			font-size: 1.3em;
 		}
+
 		ul {
 			li {
 				a {
 					font-size: 1.3em;
 				}
 			}
+
 			text-align: center;
 		}
 	}
+
+	/* STYLES ATRACCIONES */
+	.atraccionesContainer {
+		width: 90%;
+	}
 }
+
 @media (min-width: 320px) and (max-width: 480px) {
+
+	/* RESPONSIVE VALORACIONES PÁGINA BASE */
 	.valoraciones {
 		display: flex;
 		flex-direction: column;
+
 		img {
 			width: 80%;
 		}
+
 		p {
 			font-size: 1em;
 		}
 	}
+
 	.valoracionesItems {
 		display: flex;
 		flex-direction: column;
 	}
+
 	.container-fluid {
 		padding: .5em 0;
 	}
+
+	/* RESPONSIVE HABITACIONES */
 	.flexContainer {
 		display: grid;
 		justify-content: center;
@@ -431,47 +504,65 @@ article {
 		grid-template-columns: 12em 7em;
 		font-size: 1em;
 	}
+
 	.flexItem {
 		height: 4em;
 	}
+
 	.flexTable-1 {
 		display: flex;
 		justify-content: center;
 	}
+
 	.flexTable-2 {
 		display: flex;
 		justify-content: center;
 	}
+
 	.imagenes-habitaciones {
 		width: 98%;
 	}
+
+	/* STYLES CONTACTO */
 	.containerContacto {
 		flex-direction: column;
 	}
+
 	.formularioContacto {
 		width: 90%;
 	}
+
 	.campoEscritura {
 		width: 90%;
 	}
+
 	.contactoPersonal {
 		display: flex;
 		flex-direction: column;
 		width: 90%;
 		padding-top: 3em;
+
 		p {
 			font-size: 1.3em;
 		}
+
 		ul {
 			li {
 				a {
 					font-size: 1.3em;
 				}
 			}
+
 			text-align: center;
 		}
 	}
+
 	.caller {
 		padding-bottom: 20px;
+	}
+
+	/* STYLES ATRACCIONES */
+	.atraccionesContainer {
+		width: 90%;
 	}
 }

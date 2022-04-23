@@ -9,6 +9,9 @@
     <link rel="shortcut icon" href="../img/DoValeEncantado2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,12 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../sass/style.css">
 </head>
 
 <body>
     <header>
         <div class="containerBarra">
+            <!-- EMPIEZA EL NAV BAR -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +40,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page"
-                                    href="../pages/habitaciones.html">Habitaciones</a>
+                                    href="../pages/departamentos.html">Departamentos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="../pages/contacto.html">Contacto</a>
@@ -48,55 +52,78 @@
                     </div>
                 </div>
             </nav>
+            <!-- TERMINA EL NAV BAR -->
             <div class="titulo">
                 <h1>Atracciones</h1>
             </div>
         </div>
     </header>
-    <main class="container-main">
-        <div class="atraccionRow-1">
-            <div class="card" style="width: 18rem;">
-                <img src="../img/beto-carrero.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Beto Carrero World es un parque temático ubicado en el municipio de Peña, en el
-                        Estado de Santa Catarina, en Brasil.</p>
+    <main>
+        <div class="container-main">
+            <!-- CAROUSEL -->
+            <div id="carouselExampleCaptions" class="carousel slide container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/paisaje-1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ilha do Arvoredo</h5>
+                            <p>Reserva natural muy apreciada por los submarinistas por su variada fauna marina.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/paisaje-2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Playas</h5>
+                            <p>Bombinhas es una de las ciudades brasileñas con más playas galardonadas con la Bandera
+                                Azul,
+                                el sello de calidad internacional que se otorga a destinos más sustentables en términos
+                                de
+                                calidad del agua, educación ambiental, seguridad, servicios, turismo sostenible y
+                                responsabilidad social. Tres de sus playas han sido premiadas: Conceição, Mariscal y
+                                Quatro
+                                Ilhas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/paisaje-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Puente Colgante</h5>
+                            <p>Se construyó entre 1870 y 1883 y, en el momento de su inauguración, era el puente
+                                colgante
+                                más grande de Brasil.</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/porto-piratas.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Barco pirata con vistas panorámicas y espectáculo para visitantes con la
-                        tripulación disfrazada.</p>
-                </div>
+            <!-- TERMINA EL CAROUSEL-->
+            <!-- ATRACCIONES -->
+            <div class="subtitulosContainer">
+                <h2>ATRACCIONES</h2>
+                <p>Esta hermosa ciudad cuenta con un sin fin de actividades para llevar a cabo, también
+                    cuenta con actividades primordiales como el famoso <a href="http://www.betocarrero.com.br/"
+                        target="_blank">Beto Carrero World</a>,la <a href="https://ilhadeportobelo.com.br/"
+                        target="_blank">Ilha Porto Belho </a>, el <a href="http://www.parqueportodasaguas.com.br/"
+                        target="_blank">Parque Acuatico Porto das Aguas</a> y el <a
+                        href="http://www.portodospiratas.com.br/" target="_blank">Porto Dos Piratas</a>, ubicado en
+                    Porto Bello. </p>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/porto-das-aguas.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Parque Acuático Puerto de las Aguas.</p>
-                </div>
-            </div>
-        </div>
-        <div class="atraccionRow-2">
-            <div class="card" style="width: 18rem;">
-                <img src="../img/playas-bombinhas.webp" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
-            <div class="card " style="width: 18rem;">
-                <img src="../img/ilha-porto-belho.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                </div>
-            </div>
+            <!-- FIN DE ATRACCIONES -->
         </div>
     </main>
     <footer>
         <div class="container-footer">
+            <!-- WEBSITES EXTERNOS -->
             <div class="redirecciones">
-                <!-- WEBSITES EXTERNOS -->
                 <a href="https://www.airbnb.com.ar/rooms/31093569?_set_bev_on_new_domain=1646913028_OGI3YTUxYjliMmRj&source_impression_id=p3_1646913029_HwmBhIP7B9ULOY2p"
                     target="_blank">
                     <i class="fa-brands fa-airbnb"></i>
@@ -108,6 +135,7 @@
                     <i class="fa-solid fa-b"></i>
                 </a>
             </div>
+            <!-- TERMINA WEBSITES EXTERNOS -->
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

@@ -1,25 +1,4 @@
 @charset "UTF-8";
-/* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
-/* STYLES BARRA DE NAVEGACIÓN */
-/* STYLE DE PÁGINA BASE */
-/* GRID LAYOUT IMAGENES */
-/* STYLES HABITACIONES */
-/* STYLES CONTACTO */
-/* STYLES UBICACIÓN  */
-/* STYLES ATRACCION */
-/* SMALL LAPTOPS DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
-/* ATRACCIONES */
-/* TABLETS DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
-/* MOBILE DESIGN */
-/* RESPONSIVE VALORACIONES PÁGINA BASE */
-/* RESPONSIVE HABITACIONES */
-/* STYLES CONTACTO */
 * {
   margin: 0%;
   padding: 0%;
@@ -27,6 +6,7 @@
           box-sizing: border-box;
 }
 
+/* COMIENZA EL STYLE BÁSICO DE LA PÁGINA */
 .logos {
   width: 6em;
   height: 6em;
@@ -57,6 +37,7 @@ article {
   font-size: xx-large;
 }
 
+/* STYLES BARRA DE NAVEGACIÓN */
 #navbarNav {
   background-color: rgba(119, 92, 46, 0.3);
   margin: auto;
@@ -118,11 +99,12 @@ article {
 
 .container-fluid {
   padding: 0;
-  background-color: rgba(145, 102, 32, 0.3);
+  background-color: rgba(119, 92, 46, 0.3);
 }
 
+/* STYLE DE PÁGINA BASE */
 .container-main {
-  background-color: rgba(145, 102, 32, 0.3);
+  background-color: rgba(119, 92, 46, 0.3);
   width: 100%;
   height: 100%;
   font-family: 'Nunito', sans-serif;
@@ -134,6 +116,7 @@ article {
   text-align: center;
   font-size: 1.3em;
   margin: 40px 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .container-main section {
@@ -147,7 +130,7 @@ article {
 .container-footer {
   -o-object-position: bottom;
      object-position: bottom;
-  background-color: rgba(145, 102, 32, 0.2);
+  background-color: rgba(119, 92, 46, 0.3);
   width: 100%;
   padding: 10px;
 }
@@ -172,13 +155,22 @@ article {
   padding-top: 1em;
 }
 
-.valoracionesItem img {
-  width: 17em;
-  height: auto;
-  padding-top: 1.5em;
+.colorPrincipal {
+  color: #96763e;
 }
 
-.valoraciones {
+#carouselExampleSlidesOnly {
+  width: 30em;
+}
+
+.carouselBorder {
+  border: 5px solid #fff;
+  border-radius: 1px;
+}
+
+.containerInicio {
+  width: 50%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,31 +178,13 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.imagesValoracion:hover {
-  -webkit-transform: scale(1.03, 1.03);
-          transform: scale(1.03, 1.03);
-}
-
-.flexContainer {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: 12em 7em;
-      grid-template-columns: 12em 7em;
-  font-size: xx-large;
-}
-
-.flexTable-1 {
+.subtitulosContainer-1 {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,35 +192,26 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border: 1px solid #000;
-  display: inline-block;
+  margin: auto;
+  padding-bottom: 3em;
 }
 
-.flexTable-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 1px solid #000;
-  display: inline-block;
+.subtitulosContainer-1 h2 {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
 }
 
-.flexItem {
-  height: 2em;
+.subtitulosContainer-1 p {
+  margin: auto text-align center;
+  font-size: 1.7em;
 }
 
-.container__photos {
-  margin: 2em;
+.subtitulosContainer-1 p a {
+  color: #000;
 }
 
-.imagenes-habitaciones {
-  width: 30em;
-  height: 30em;
-}
-
+/* STYLES HABITACIONES */
+/* STYLES CONTACTO */
 .formularioContacto {
   width: 30%;
   margin: auto;
@@ -339,37 +304,42 @@ article {
   width: 100%;
 }
 
-.atraccionRow-1 {
+/* ATRACCIONES STYLE */
+.subtitulosContainer {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 3em 0;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  padding-bottom: 3em;
 }
 
-.atraccionRow-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 3em 0;
+.subtitulosContainer h2 {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
 }
 
-.card-text {
-  font-size: 1.3em;
+.subtitulosContainer p {
+  margin: auto text-align center;
+  font-size: 1.7em;
 }
 
+.subtitulosContainer p a {
+  color: #000;
+}
+
+/* MOBILE DESIGN */
 @media (min-width: 769px) and (max-width: 1024px) {
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
   .valoraciones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -397,39 +367,8 @@ article {
   .container-fluid {
     padding: .5em 0;
   }
-  .flexContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-grid-columns: 12em 7em;
-        grid-template-columns: 12em 7em;
-  }
-  .flexItem {
-    height: 2em;
-  }
-  .flexTable-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .flexTable-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .imagenes-habitaciones {
-    width: 98%;
-  }
+  /* RESPONSIVE HABITACIONES */
+  /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -465,9 +404,14 @@ article {
   .caller {
     padding-bottom: 27px;
   }
+  /* STYLES ATRACCIONES */
+  .atraccionesContainer {
+    width: 90%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
   .valoraciones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -495,6 +439,7 @@ article {
   .container-fluid {
     padding: .5em 0;
   }
+  /* RESPONSIVE HABITACIONES */
   .flexContainer {
     display: -ms-grid;
     display: grid;
@@ -533,6 +478,7 @@ article {
     padding-bottom: 28px;
     padding-bottom: 25px;
   }
+  /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -565,9 +511,14 @@ article {
   .contactoPersonal ul li a {
     font-size: 1.3em;
   }
+  /* STYLES ATRACCIONES */
+  .atraccionesContainer {
+    width: 90%;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+  /* RESPONSIVE VALORACIONES PÁGINA BASE */
   .valoraciones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -595,6 +546,7 @@ article {
   .container-fluid {
     padding: .5em 0;
   }
+  /* RESPONSIVE HABITACIONES */
   .flexContainer {
     display: -ms-grid;
     display: grid;
@@ -629,6 +581,7 @@ article {
   .imagenes-habitaciones {
     width: 98%;
   }
+  /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -663,6 +616,10 @@ article {
   }
   .caller {
     padding-bottom: 20px;
+  }
+  /* STYLES ATRACCIONES */
+  .atraccionesContainer {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
