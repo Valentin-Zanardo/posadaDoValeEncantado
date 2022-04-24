@@ -191,7 +191,7 @@ article {
 		}
 	}
 }
-/* STYLES HABITACIONES */
+/* STYLES DEPARTAMENTOS */
 
 
 /* STYLES CONTACTO */
@@ -306,29 +306,29 @@ article {
 @media (min-width: 769px) and (max-width: 1024px) {
 
 	/* RESPONSIVE VALORACIONES PÁGINA BASE */
-	.valoraciones {
-		display: flex;
-		flex-direction: column;
-
-		img {
-			width: 80%;
-		}
-
-		p {
-			font-size: 1em;
-		}
-	}
-
-	.valoracionesItems {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.container-fluid {
 		padding: .5em 0;
 	}
+	.subtitulosContainer-1 {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	
+		p {
+			font-size: 1.7em;
+		}
+	}
+ 	#carouselExampleSlidesOnly{
+		margin: auto;
+	 }
 
-	/* RESPONSIVE HABITACIONES */
+	.containerInicio{
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
+	}
+
+	/* RESPONSIVE DEPARTAMENTOS */
 
 	/* STYLES CONTACTO */
 	.containerContacto {
@@ -369,7 +369,7 @@ article {
 	}
 
 	/* STYLES ATRACCIONES */
-	.atraccionesContainer {
+	.subtitulosContainer{
 		width: 90%;
 	}
 }
@@ -377,58 +377,32 @@ article {
 @media (min-width: 481px) and (max-width: 768px) {
 
 	/* RESPONSIVE VALORACIONES PÁGINA BASE */
-	.valoraciones {
-		display: flex;
-		flex-direction: column;
-
-		img {
-			width: 80%;
-		}
-
-		p {
-			font-size: 1em;
-		}
-	}
-
-	.valoracionesItems {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.container-fluid {
 		padding: .5em 0;
 	}
-
-	/* RESPONSIVE HABITACIONES */
-	.flexContainer {
-		display: grid;
-		justify-content: center;
-		align-content: center;
-		grid-template-columns: 12em 7em;
-		font-size: 1.3em;
-	}
-
-	.flexItem {
-		height: 4em;
-	}
-
-	.flexTable-1 {
+	.subtitulosContainer-1 {
+		width: 90%;
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+	
+		p {
+			font-size: 1.7em;
+		}
+	}
+ 	#carouselExampleSlidesOnly{
+		margin: auto;
+		width: 26em;
+	 }
+
+	.containerInicio{
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
 	}
 
-	.flexTable-2 {
-		display: flex;
-		justify-content: center;
-	}
-
-	.imagenes-habitaciones {
-		width: 98%;
-	}
-
-	.caller {
-		padding-bottom: 28px;
-		padding-bottom: 25px;
+	/* RESPONSIVE DEPARTAMENTOS */
+	.carouselExampleFade{
+		width: 90%;
 	}
 
 	/* STYLES CONTACTO */
@@ -466,7 +440,7 @@ article {
 	}
 
 	/* STYLES ATRACCIONES */
-	.atraccionesContainer {
+	.subtitulosContainer{
 		width: 90%;
 	}
 }
@@ -474,55 +448,34 @@ article {
 @media (min-width: 320px) and (max-width: 480px) {
 
 	/* RESPONSIVE VALORACIONES PÁGINA BASE */
-	.valoraciones {
-		display: flex;
-		flex-direction: column;
-
-		img {
-			width: 80%;
-		}
-
-		p {
-			font-size: 1em;
-		}
-	}
-
-	.valoracionesItems {
-		display: flex;
-		flex-direction: column;
-	}
-
 	.container-fluid {
 		padding: .5em 0;
 	}
-
-	/* RESPONSIVE HABITACIONES */
-	.flexContainer {
-		display: grid;
-		justify-content: center;
-		align-content: center;
-		grid-template-columns: 12em 7em;
-		font-size: 1em;
-	}
-
-	.flexItem {
-		height: 4em;
-	}
-
-	.flexTable-1 {
+	.subtitulosContainer-1 {
+		width: 90%;
 		display: flex;
-		justify-content: center;
-	}
+		flex-direction: column;
+		
+		h2{
+			font-size: 1.5em;
+		}
 
-	.flexTable-2 {
-		display: flex;
-		justify-content: center;
+		p {
+			font-size: 1.7em;
+		}
 	}
+ 	#carouselExampleSlidesOnly{
+		margin: auto;
+		width: 95%;
+	 }
 
-	.imagenes-habitaciones {
-		width: 98%;
+	.containerInicio{
+		margin: auto;
+		flex-direction: column;
+		width: 85%;
 	}
-
+	/* RESPONSIVE DEPARTAMENTOS */
+	
 	/* STYLES CONTACTO */
 	.containerContacto {
 		flex-direction: column;
@@ -562,7 +515,11 @@ article {
 	}
 
 	/* STYLES ATRACCIONES */
-	.atraccionesContainer {
+	.subtitulosContainer{
 		width: 90%;
+
+		p{
+			font-size: 1.4em;
+		}
 	}
 }

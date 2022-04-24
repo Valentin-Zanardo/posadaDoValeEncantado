@@ -210,7 +210,7 @@ article {
   color: #000;
 }
 
-/* STYLES HABITACIONES */
+/* STYLES DEPARTAMENTOS */
 /* STYLES CONTACTO */
 .formularioContacto {
   width: 30%;
@@ -340,34 +340,34 @@ article {
 /* MOBILE DESIGN */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* RESPONSIVE VALORACIONES PÁGINA BASE */
-  .valoraciones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .valoraciones img {
-    width: 80%;
-  }
-  .valoraciones p {
-    font-size: 1em;
-  }
-  .valoracionesItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .container-fluid {
     padding: .5em 0;
   }
-  /* RESPONSIVE HABITACIONES */
+  .subtitulosContainer-1 {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subtitulosContainer-1 p {
+    font-size: 1.7em;
+  }
+  #carouselExampleSlidesOnly {
+    margin: auto;
+  }
+  .containerInicio {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+  }
+  /* RESPONSIVE DEPARTAMENTOS */
   /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
@@ -405,78 +405,44 @@ article {
     padding-bottom: 27px;
   }
   /* STYLES ATRACCIONES */
-  .atraccionesContainer {
+  .subtitulosContainer {
     width: 90%;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
   /* RESPONSIVE VALORACIONES PÁGINA BASE */
-  .valoraciones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .valoraciones img {
-    width: 80%;
-  }
-  .valoraciones p {
-    font-size: 1em;
-  }
-  .valoracionesItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .container-fluid {
     padding: .5em 0;
   }
-  /* RESPONSIVE HABITACIONES */
-  .flexContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-grid-columns: 12em 7em;
-        grid-template-columns: 12em 7em;
-    font-size: 1.3em;
-  }
-  .flexItem {
-    height: 4em;
-  }
-  .flexTable-1 {
+  .subtitulosContainer-1 {
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .flexTable-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .subtitulosContainer-1 p {
+    font-size: 1.7em;
   }
-  .imagenes-habitaciones {
-    width: 98%;
+  #carouselExampleSlidesOnly {
+    margin: auto;
+    width: 26em;
   }
-  .caller {
-    padding-bottom: 28px;
-    padding-bottom: 25px;
+  .containerInicio {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+  }
+  /* RESPONSIVE DEPARTAMENTOS */
+  .carouselExampleFade {
+    width: 90%;
   }
   /* STYLES CONTACTO */
   .containerContacto {
@@ -512,75 +478,45 @@ article {
     font-size: 1.3em;
   }
   /* STYLES ATRACCIONES */
-  .atraccionesContainer {
+  .subtitulosContainer {
     width: 90%;
   }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   /* RESPONSIVE VALORACIONES PÁGINA BASE */
-  .valoraciones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .valoraciones img {
-    width: 80%;
-  }
-  .valoraciones p {
-    font-size: 1em;
-  }
-  .valoracionesItems {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .container-fluid {
     padding: .5em 0;
   }
-  /* RESPONSIVE HABITACIONES */
-  .flexContainer {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-grid-columns: 12em 7em;
-        grid-template-columns: 12em 7em;
-    font-size: 1em;
-  }
-  .flexItem {
-    height: 4em;
-  }
-  .flexTable-1 {
+  .subtitulosContainer-1 {
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .flexTable-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .subtitulosContainer-1 h2 {
+    font-size: 1.5em;
   }
-  .imagenes-habitaciones {
-    width: 98%;
+  .subtitulosContainer-1 p {
+    font-size: 1.7em;
   }
+  #carouselExampleSlidesOnly {
+    margin: auto;
+    width: 95%;
+  }
+  .containerInicio {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+  }
+  /* RESPONSIVE DEPARTAMENTOS */
   /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
@@ -618,8 +554,11 @@ article {
     padding-bottom: 20px;
   }
   /* STYLES ATRACCIONES */
-  .atraccionesContainer {
+  .subtitulosContainer {
     width: 90%;
+  }
+  .subtitulosContainer p {
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=style.css.map */
