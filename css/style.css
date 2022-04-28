@@ -210,6 +210,65 @@ article {
   color: #000;
 }
 
+/* MAP */
+.colorTitle {
+  color: #96763e;
+}
+
+.colorSubtitle {
+  color: #000;
+}
+
+/* TERMINA EL MAP */
+/* MAP GET */
+.titleColor {
+  color: #96763e;
+  font-size: 40px;
+}
+
+/* TERMINA MAP GET */
+/* EXTEND */
+.subtitleColorPrincipal {
+  color: #96763e;
+}
+
+/* TERMINA EXTEND */
+/* MIXIN */
+.mixinNavOriginal {
+  background-color: rgba(119, 92, 46, 0.3);
+  margin: auto;
+  padding: 35px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #96763e;
+  font-size: 40px;
+}
+
+.mixinNavCustom {
+  background-color: rgba(119, 92, 46, 0.3);
+  margin: auto;
+  padding: 35px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: #fff;
+  font-size: 43px;
+}
+
+/* TERMINA MIXIN */
 /* STYLES DEPARTAMENTOS */
 /* STYLES CONTACTO */
 .formularioContacto {
@@ -305,7 +364,7 @@ article {
 }
 
 /* ATRACCIONES STYLE */
-.subtitulosContainer {
+.subtitulosContainer, .subtitleColorPrincipal {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,17 +382,17 @@ article {
   padding-bottom: 3em;
 }
 
-.subtitulosContainer h2 {
+.subtitulosContainer h2, .subtitleColorPrincipal h2 {
   font-size: 1.8em;
   font-family: 'Lato', sans-serif;
 }
 
-.subtitulosContainer p {
+.subtitulosContainer p, .subtitleColorPrincipal p {
   margin: auto text-align center;
   font-size: 1.7em;
 }
 
-.subtitulosContainer p a {
+.subtitulosContainer p a, .subtitleColorPrincipal p a {
   color: #000;
 }
 
@@ -405,7 +464,7 @@ article {
     padding-bottom: 27px;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer {
+  .subtitulosContainer, .subtitleColorPrincipal {
     width: 90%;
   }
 }
@@ -478,7 +537,7 @@ article {
     font-size: 1.3em;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer {
+  .subtitulosContainer, .subtitleColorPrincipal {
     width: 90%;
   }
 }
@@ -554,10 +613,10 @@ article {
     padding-bottom: 20px;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer {
+  .subtitulosContainer, .subtitleColorPrincipal {
     width: 90%;
   }
-  .subtitulosContainer p {
+  .subtitulosContainer p, .subtitleColorPrincipal p {
     font-size: 1.4em;
   }
 }
