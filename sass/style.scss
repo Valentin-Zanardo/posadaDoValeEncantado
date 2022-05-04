@@ -133,6 +133,7 @@ article {
 	}
 
 	i {
+		color: $colorPrincipal;
 		width: 3em;
 	}
 }
@@ -170,6 +171,30 @@ article {
 	justify-content: space-between;
 }
 
+.subtitulosContainer {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding-bottom: 3em;
+
+	h2 {
+		font-size: 1.8em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
+	}
+}
+
 .subtitulosContainer-1 {
 	width: 60%;
 	display: flex;
@@ -192,58 +217,29 @@ article {
 	}
 }
 
-/* MAP */
-$titlesColors: (Title: $colorPrincipal,
-	Subtitle: #000);
+.subtitulosContainer-2 {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	margin: auto;
+	padding: 6em 0;
 
-@each $nombre,
-$valor in $titlesColors {
-	.color#{$nombre} {
-		color: $valor;
+	h2 {
+		font-size: 2em;
+		font-family: 'Lato', sans-serif;
+	}
+
+	p {
+		margin: auto text-align center;
+		font-size: 1.7em;
+
+		a {
+			color: #000;
+		}
 	}
 }
-
-/* TERMINA EL MAP */
-
-/* MAP GET */
-.titleColor {
-	color: map-get($map: $titlesColors, $key: Title);
-	font-size: 40px;
-}
-
-/* TERMINA MAP GET */
-
-/* EXTEND */
-.subtitleColorPrincipal{
-	@extend .subtitulosContainer;
-	color: $colorPrincipal
-}
-/* TERMINA EXTEND */
-
-/* MIXIN */
-@mixin nav ($col, $size) {
-	background-color: $mainColor;
-	margin: auto;
-	padding: 35px 0;
-	align-items: center;
-	justify-content: center;
-	position: sticky;
-	top: 0;
-	color: $col;
-	font-size: $size;
-}
-
-.mixinNavOriginal {
-	@include nav ($colorPrincipal, 40px)
-}
-
-.mixinNavCustom {
-	@include nav(#fff, 43px)
-}
-
-/* TERMINA MIXIN */
-
-/* STYLES DEPARTAMENTOS */
 
 
 /* STYLES CONTACTO */
@@ -328,32 +324,6 @@ $valor in $titlesColors {
 	}
 }
 
-/* ATRACCIONES STYLE */
-
-.subtitulosContainer {
-	width: 60%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	margin: auto;
-	padding-bottom: 3em;
-
-	h2 {
-		font-size: 1.8em;
-		font-family: 'Lato', sans-serif;
-	}
-
-	p {
-		margin: auto text-align center;
-		font-size: 1.7em;
-
-		a {
-			color: #000;
-		}
-	}
-}
-
 /* MOBILE DESIGN */
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -382,7 +352,13 @@ $valor in $titlesColors {
 		width: 85%;
 	}
 
-	/* RESPONSIVE DEPARTAMENTOS */
+	.subtitulosContainer-2 {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
 
 	/* STYLES CONTACTO */
 	.containerContacto {
@@ -456,9 +432,12 @@ $valor in $titlesColors {
 		width: 85%;
 	}
 
-	/* RESPONSIVE DEPARTAMENTOS */
-	.carouselExampleFade {
+	.subtitulosContainer-2 {
 		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
 	}
 
 	/* STYLES CONTACTO */
@@ -533,7 +512,13 @@ $valor in $titlesColors {
 		width: 85%;
 	}
 
-	/* RESPONSIVE DEPARTAMENTOS */
+	.subtitulosContainer-2 {
+		width: 90%;
+
+		p {
+			font-size: 1.4em;
+		}
+	}
 
 	/* STYLES CONTACTO */
 	.containerContacto {

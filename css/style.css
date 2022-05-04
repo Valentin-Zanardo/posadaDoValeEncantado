@@ -140,6 +140,7 @@ article {
 }
 
 .container-footer i {
+  color: #96763e;
   width: 3em;
 }
 
@@ -183,6 +184,38 @@ article {
           justify-content: space-between;
 }
 
+.subtitulosContainer {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  padding-bottom: 3em;
+}
+
+.subtitulosContainer h2 {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+}
+
+.subtitulosContainer p {
+  margin: auto text-align center;
+  font-size: 1.7em;
+}
+
+.subtitulosContainer p a {
+  color: #000;
+}
+
 .subtitulosContainer-1 {
   width: 60%;
   display: -webkit-box;
@@ -210,66 +243,38 @@ article {
   color: #000;
 }
 
-/* MAP */
-.colorTitle {
-  color: #96763e;
+.subtitulosContainer-2 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+  padding: 6em 0;
 }
 
-.colorSubtitle {
+.subtitulosContainer-2 h2 {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.subtitulosContainer-2 p {
+  margin: auto text-align center;
+  font-size: 1.7em;
+}
+
+.subtitulosContainer-2 p a {
   color: #000;
 }
 
-/* TERMINA EL MAP */
-/* MAP GET */
-.titleColor {
-  color: #96763e;
-  font-size: 40px;
-}
-
-/* TERMINA MAP GET */
-/* EXTEND */
-.subtitleColorPrincipal {
-  color: #96763e;
-}
-
-/* TERMINA EXTEND */
-/* MIXIN */
-.mixinNavOriginal {
-  background-color: rgba(119, 92, 46, 0.3);
-  margin: auto;
-  padding: 35px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  color: #96763e;
-  font-size: 40px;
-}
-
-.mixinNavCustom {
-  background-color: rgba(119, 92, 46, 0.3);
-  margin: auto;
-  padding: 35px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  color: #fff;
-  font-size: 43px;
-}
-
-/* TERMINA MIXIN */
-/* STYLES DEPARTAMENTOS */
 /* STYLES CONTACTO */
 .formularioContacto {
   width: 30%;
@@ -363,39 +368,6 @@ article {
   width: 100%;
 }
 
-/* ATRACCIONES STYLE */
-.subtitulosContainer, .subtitleColorPrincipal {
-  width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  margin: auto;
-  padding-bottom: 3em;
-}
-
-.subtitulosContainer h2, .subtitleColorPrincipal h2 {
-  font-size: 1.8em;
-  font-family: 'Lato', sans-serif;
-}
-
-.subtitulosContainer p, .subtitleColorPrincipal p {
-  margin: auto text-align center;
-  font-size: 1.7em;
-}
-
-.subtitulosContainer p a, .subtitleColorPrincipal p a {
-  color: #000;
-}
-
 /* MOBILE DESIGN */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* RESPONSIVE VALORACIONES PÁGINA BASE */
@@ -426,7 +398,12 @@ article {
             flex-direction: column;
     width: 85%;
   }
-  /* RESPONSIVE DEPARTAMENTOS */
+  .subtitulosContainer-2 {
+    width: 90%;
+  }
+  .subtitulosContainer-2 p {
+    font-size: 1.4em;
+  }
   /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
@@ -464,7 +441,7 @@ article {
     padding-bottom: 27px;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer, .subtitleColorPrincipal {
+  .subtitulosContainer {
     width: 90%;
   }
 }
@@ -499,9 +476,11 @@ article {
             flex-direction: column;
     width: 85%;
   }
-  /* RESPONSIVE DEPARTAMENTOS */
-  .carouselExampleFade {
+  .subtitulosContainer-2 {
     width: 90%;
+  }
+  .subtitulosContainer-2 p {
+    font-size: 1.4em;
   }
   /* STYLES CONTACTO */
   .containerContacto {
@@ -537,7 +516,7 @@ article {
     font-size: 1.3em;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer, .subtitleColorPrincipal {
+  .subtitulosContainer {
     width: 90%;
   }
 }
@@ -575,7 +554,12 @@ article {
             flex-direction: column;
     width: 85%;
   }
-  /* RESPONSIVE DEPARTAMENTOS */
+  .subtitulosContainer-2 {
+    width: 90%;
+  }
+  .subtitulosContainer-2 p {
+    font-size: 1.4em;
+  }
   /* STYLES CONTACTO */
   .containerContacto {
     -webkit-box-orient: vertical;
@@ -613,10 +597,10 @@ article {
     padding-bottom: 20px;
   }
   /* STYLES ATRACCIONES */
-  .subtitulosContainer, .subtitleColorPrincipal {
+  .subtitulosContainer {
     width: 90%;
   }
-  .subtitulosContainer p, .subtitleColorPrincipal p {
+  .subtitulosContainer p {
     font-size: 1.4em;
   }
 }
